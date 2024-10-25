@@ -1,0 +1,356 @@
+#fanclub {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.welcome {
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px auto;
+    max-width: 100%;
+    border-bottom: 2px solid #684883;
+    margin-top: 100px;
+    width: 45%;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #684883;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: #684883;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #684883;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.fanclub-benefits {
+    list-style-type: circle;
+    padding-left: 0;
+}
+
+.fanclub-benefits li {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 50px;
+    line-height: 1.5;
+}
+
+.fanclub-guidelines {
+    list-style-type: circle;
+    padding-left: 0;
+}
+
+.fanclub-guidelines li {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 50px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid #684883;
+    margin: 20px 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+    transition: transform 0.5s ease;
+}
+
+.image-gallery img {
+    width: 18%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); 
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#comments-section {
+    margin-top: 2rem;
+}
+
+.comment {
+    background: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#comments-section strong {
+    margin-top: 2rem;
+    font-size: 12px;
+    color: #684883;
+}
+
+.comment button {
+    background-color: #684883;
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.comment button:hover {
+    background-color: #ab77d8;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+label {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: black; 
+    display: block; 
+}
+
+textarea {
+    width: 100%;
+}
+
+textarea#comment {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 1px solid #684883; 
+    font-size: 1.2rem; 
+    resize: vertical;
+    height: 100px;
+}
+
+.input-container {
+    display: flex; 
+    align-items: left; 
+    justify-content: space-between; 
+    gap: 10px; 
+}
+
+input[type="file"] {
+    flex-grow: 1; 
+}
+
+input[type="submit"] {
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #684883;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+input[type="submit"]:hover {
+    background-color: #ab77d8; 
+}
+
+@media (max-width: 1024px) {
+    .welcome {
+        width: 80%; 
+        padding: 15px 0;
+        margin: 20px auto; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+    }
+
+    .welcome h1 {
+        font-size: 2em; 
+        margin-bottom: 15px; 
+    }
+
+    .welcome p {
+        font-size: 1em; 
+        margin-bottom: 20px; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+    }
+
+    h3 {
+        font-size: 1.8rem; 
+        margin: 25px 0;
+    }
+
+    p {
+        font-size: 1.2rem; 
+        margin: 0 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .fanclub-benefits li,
+    .fanclub-guidelines li {
+        font-size: 1.2rem; 
+        margin-left: 20px; 
+        margin-bottom: 10px; 
+    }
+
+    .image-gallery {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        margin-bottom: 20px; 
+    }
+
+    .image-gallery img {
+        width: 30%; 
+        margin: 5px; 
+    }
+
+    #comments-section strong {
+        font-size: 14px; 
+        margin-bottom: 5px; 
+    }
+
+    .comment {
+        margin-bottom: 10px; 
+    }
+
+    form {
+        margin-top: 1rem; 
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 1rem; 
+        margin-bottom: 5px; 
+    }
+
+    textarea {
+        font-size: 1rem; 
+        margin-bottom: 10px; 
+    }
+
+    input[type="submit"] {
+        font-size: 10px; 
+        margin-top: 10px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .welcome {
+        width: 90%; 
+        margin: 20px auto; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+        padding-top: 70%;
+    }
+
+    .welcome h1 {
+        font-size: 1.8em; 
+        margin-bottom: 15px; 
+    }
+
+    .welcome p,
+    h3,
+    p,
+    .fanclub-benefits li,
+    .fanclub-guidelines li {
+        font-size: 1.1rem; 
+        margin-bottom: 15px; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+    }
+
+    .image-gallery img {
+        width: 45%; 
+        margin: 5px; 
+    }
+
+    .comment {
+        margin-bottom: 10px; 
+    }
+
+    textarea {
+        font-size: 0.9rem; 
+        margin-bottom: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        width: 95%; 
+        margin: 20px auto; 
+        margin-left: 10px; 
+        margin-right: 10px; 
+        padding-top: 110px;
+    }
+
+    .welcome h1 {
+        font-size: 1.5em; 
+        margin-bottom: 15px; 
+    }
+
+    .welcome p,
+    h3,
+    p,
+    .fanclub-benefits li,
+    .fanclub-guidelines li {
+        font-size: 1rem; 
+        margin-bottom: 15px; 
+        margin-left: 10px; 
+        margin-right: 10px; 
+    }
+
+    .image-gallery img {
+        width: 90%; 
+        margin: 5px; 
+    }
+
+    .comment {
+        margin-bottom: 10px; 
+    }
+
+    form {
+        margin-top: 0.5rem; 
+        margin-bottom: 20px; 
+    }
+
+    label {
+        font-size: 0.9rem; 
+        margin-bottom: 5px; 
+    }
+
+    textarea {
+        font-size: 0.8rem; 
+        margin-bottom: 10px; 
+    }
+
+    input[type="submit"] {
+        font-size: 9px; 
+        margin-top: 10px; 
+    }
+}

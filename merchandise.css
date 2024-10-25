@@ -1,0 +1,254 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 100%; 
+    height: 100%;
+    transition: transform 0.6s ease;
+    animation: autoSlide 18s infinite; 
+}
+
+.slide {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    object-fit: contain; 
+    border: 5px solid #684883;
+}
+
+@keyframes autoSlide {
+    0% {
+        transform: translateX(0);
+    }
+    16.66% {
+        transform: translateX(0);
+    } 
+    33.33% {
+        transform: translateX(-100%);
+    } 
+    50% {
+        transform: translateX(-200%);
+    } 
+    66.66% {
+        transform: translateX(-300%);
+    } 
+    83.33% {
+        transform: translateX(-400%);
+    } 
+    100% {
+        transform: translateX(-500%);
+    } 
+}
+
+#slide1:checked ~ .slides {
+    animation: none; 
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    animation: none;
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    animation: none;
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+    animation: none;
+    transform: translateX(-300%);
+}
+
+#slide5:checked ~ .slides {
+    animation: none;
+    transform: translateX(-400%);
+}
+
+#slide6:checked ~ .slides {
+    animation: none;
+    transform: translateX(-500%);
+}
+
+input[type="radio"]:checked ~ .slides {
+    animation-delay: 5s; 
+}
+
+.navigation {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nav-btn {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.heading {
+    font-size: 3em;
+    color: #684883;
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block; 
+    border-bottom: 2px solid #684883;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.features {
+    width: 100%;
+    padding: 0rem 8rem;
+    padding-bottom: 5rem;
+}
+
+.features .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    position: relative;
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.features .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    transition: outline-offset 0.3s ease, transform 0.3s ease;
+    height: fit-content;
+    flex: 1 1 calc(25%); 
+}
+
+.features .box-container .box:hover {
+    outline-offset: 0rem;
+    transform: scale(1.1); 
+}
+
+.features .box-container .box img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    object-fit: cover; 
+}
+
+.features .box-container .box h3 {
+    font-size: 1.6em;
+    color: #684883;
+    margin-bottom: 0.5rem;
+}
+
+.features .box-container .box p {
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+}
+
+.features .box-container .box .btn {
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #684883;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.features .box-container .box .btn:hover {
+    background-color: #ab77d8;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .slider-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .features, .heading {
+        text-align: center; 
+    }
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .box {
+        flex: 1 1 45%; 
+        margin: 10px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .slider-container {
+        width: 100%;
+    }
+
+    .box-container {
+        flex-direction: column; 
+    }
+
+    .box {
+        flex: 1 1 100%; 
+        margin: 5px 0; 
+    }
+
+    .heading {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.2rem; 
+    }
+
+    .box {
+        padding: 10px; 
+    }
+
+    .btn {
+        font-size: 14px; 
+    }
+}

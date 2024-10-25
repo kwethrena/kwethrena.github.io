@@ -1,0 +1,201 @@
+.video-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden; 
+}
+
+#bg-video {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: auto; 
+}
+
+.tour-section-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.tour-section {
+    position: relative;
+    width: 50%; 
+    max-width: 100%; 
+    color: white;
+    padding: 20px 30px;
+    z-index: 2; 
+    margin-bottom: 0; 
+}
+
+.tour-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.region-title {
+    font-size: 6em; 
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.tour-table th,
+.tour-table td {
+    padding: 10px 15px; 
+    text-align: center;
+}
+
+.tour-table th {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    border-top: 1px solid white;
+}
+
+.tour-table td {
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.tour-table tr:hover {
+    background-color: rgb(104, 72, 131, 0.5);
+}
+
+.ticketlink {
+    color: #ab77d8;
+}
+
+.ticketlink:hover {
+    color: white;
+}
+
+.welcome {
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px auto;
+    max-width: 100%;
+    border-bottom: 2px solid white;
+    margin-top: 100px;
+    width: 45%;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: white;
+    font-style: italic;
+}
+
+@media (max-width: 1024px) {
+    .tour-section-wrapper {
+        padding: 20px; 
+    }
+
+    .region-title {
+        font-size: 1.8rem; 
+        margin-top: 20px; 
+    }
+
+    .tour-table {
+        font-size: 0.9rem; 
+    }
+
+    .tour-table th, .tour-table td {
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome {
+        text-align: center; 
+    }
+
+    .welcome h1 {
+        font-size: 2rem; 
+    }
+
+    .tour-section-wrapper {
+        padding: 10px; 
+    }
+
+    .region-title {
+        font-size: 1.5rem; 
+    }
+
+    .tour-table {
+        width: 100%; 
+        font-size: 0.85rem;
+    }
+
+    .tour-table th, .tour-table td {
+        padding: 8px; 
+        display: block; 
+        text-align: left; 
+    }
+
+    .tour-table tr {
+        margin-bottom: 15px; 
+        border: 1px solid #ccc; 
+    }
+
+    .welcome {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome h1 {
+        font-size: 1.5rem; 
+    }
+
+    .welcome p {
+        font-size: 0.9rem; 
+    }
+
+    .region-title {
+        font-size: 1.2rem; 
+    }
+
+    .tour-table {
+        font-size: 0.75rem; 
+    }
+
+    .tour-table th, .tour-table td {
+        padding: 5px; 
+        display: block; 
+    }
+
+    .welcome {
+        padding-top: 80px;
+    }
+}
+

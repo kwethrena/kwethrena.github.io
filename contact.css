@@ -1,0 +1,213 @@
+.fan-club-image {
+    height: auto; 
+    max-width: 100%; 
+    margin-top: 100px;
+}
+
+h2 {
+    color: #684883;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.fan-club-section {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.fan-club-section p {
+    font-size: 12px;
+}
+
+.learn-more-button {
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #684883;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.learn-more-button:hover {
+    background-color: #ab77d8;
+}
+
+.contact-details {
+    padding: 30px 100px;
+}
+
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contact-table th,
+.contact-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 12px;
+}
+
+.contact-table th {
+    background-color: #684883;
+    color: white;
+}
+
+.contact-table td {
+    background-color: white;
+}
+
+#contact-form {
+    padding: 0px 100px;
+    background-color: white; 
+    border-radius: 10px; 
+}
+
+.contact-form p {
+    font-size: 12px;
+    color: black;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: black; 
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 100%;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea#message {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 1.2rem; 
+    resize: vertical; 
+    height: 100px;
+}
+
+.contact-button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #684883;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    width: fit-content;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ab77d8;
+}
+
+.infolink {
+    color: #684883;
+}
+
+.infolink:hover {
+    color: #ab77d8;
+}
+
+@media (max-width: 1024px) {
+    .contact-details {
+        padding: 20px 10px; 
+    }
+
+    #contact-form {
+        padding: 20px 10px; 
+    }
+
+    h2 {
+        font-size: 22px; 
+    }
+
+    .fan-club-section p {
+        font-size: 14px; 
+    }
+
+    .learn-more-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fan-club-section {
+        margin-bottom: 15px;
+        height: fit-content;
+    }
+
+    .contact-table th,
+    .contact-table td {
+        font-size: 10px; 
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="text"],
+    textarea#message {
+        font-size: 1em; 
+    }
+
+    .contact-button[type="submit"] {
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px; 
+    }
+
+    .fan-club-section {
+        height: fit-content;
+        padding-top: 20px;
+    }
+
+    .fan-club-section p {
+        font-size: 12px; 
+    }
+
+    .learn-more-button {
+        padding: 8px 16px; 
+    }
+
+    .contact-table th,
+    .contact-table td {
+        font-size: 9px; 
+        padding: 8px;
+    }
+
+    #contact-form {
+        padding: 15px 5%; 
+    }
+
+    .contact-form p {
+        font-size: 10px; 
+    }
+}

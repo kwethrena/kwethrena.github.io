@@ -1,0 +1,327 @@
+body p {
+  text-align: justify;
+}
+
+.aboutcover {
+  position: relative;
+  height: auto; 
+  overflow: hidden; 
+  padding-top: 60px; 
+  
+}
+
+.aboutcover img {
+  height: 80%; 
+  width: 100%; 
+  object-position: center; 
+}
+
+.welcome {
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px auto;
+  max-width: 100%;
+  border-bottom: 2px solid #684883;
+  border-top: 2px solid #684883;
+
+}
+
+.welcome h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #684883; 
+  font-style: italic;
+  margin-top: 0%;
+}
+
+.scroll-container {
+  display: flex; 
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+  white-space: nowrap; 
+  gap: 15px; 
+  padding: 10px 30px;
+  transition: transform 0.3s ease-in-out; 
+  max-width: 95%;
+  margin: 0 auto; 
+
+}
+
+.scroll-item {
+  flex: 0 0 auto; 
+  width: 300px; 
+  height: 400px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+  margin-bottom: 10px;
+}
+
+.scroll-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.scroll-item:hover {
+  transform: scale(1.05); 
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 10px; 
+  width: 90%;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #684883; 
+  border-radius: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #ccc; 
+}
+
+section.olibaby p{
+  font-size: 25px;
+  text-align: center;
+  margin: 50px auto;
+  color: #684883;
+  width: 80%;
+font-style: italic;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0; 
+  background-color: #684883;
+  position: relative; 
+}
+
+.about img, .about1 img {
+  height: auto;
+  width: 400px;
+}
+
+.about-text, .about-text1 {
+  width: 550px;
+}
+
+.main, .main1 {
+  width: 1150px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h5 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+.about-text p { 
+  color: white;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+
+
+.main img, .main1 img {
+  width: 400px;
+  height: auto;
+  transition: transform 0.5s ease; 
+}
+
+.main:hover img, .main1:hover img{
+  transform: scale(1.1);  
+}
+
+
+.about1 {
+  width: 100%;
+  padding: 100px 0; 
+  background-color: #fff;
+  position: relative; 
+}
+
+.about-text1 h5 {
+  color: #684883;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+.about-text1 p { 
+  color: #684883;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .welcome h1 {
+    font-size: 1.8em; 
+  }
+
+  .aboutcover {
+    height: fit-content;
+    padding-top: 100px;
+  }
+
+  .about img, .about1 img {
+    flex: 1 1 calc(50% - 10px); 
+  }
+
+  .about-text, .about-text1 {
+    width: 95%; 
+    font-size: 14px; 
+    margin: 10px 0; 
+  }
+
+  section.olibaby p {
+    font-size: 18px; 
+    text-align: center; 
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome h1 {
+    font-size: 1.5em; 
+  }
+
+  .about img, .about1 img {
+    flex: 1 1 100%; 
+  }
+
+  .about-text, .about-text1 {
+    font-size: 12px; 
+    line-height: 1.5; 
+    margin: 10px 0; 
+  }
+
+  section.olibaby p {
+    font-size: 16px; 
+    text-align: center; 
+  }
+
+  .aboutcover {
+    height: fit-content;
+    padding-top: 110px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .about, .about1 {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+  }
+
+  .main {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .main1 {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .about img, .about1 img {
+      width: 80%; 
+      max-width: 500px; 
+      height: auto; 
+      margin-bottom: 15px; 
+  }
+
+  .about-text, .about-text1 {
+      width: 90%; 
+      font-size: 16px; 
+      margin: 10px auto; 
+  }
+}
+
+@media (max-width: 767px) {
+  .about, .about1 {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+  }
+
+  .aboutcover {
+    height: fit-content;
+  }
+
+  .main {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .main1 {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .about img, .about1 img {
+      width: 100%; 
+      height: auto;
+      margin-bottom: 15px; 
+  }
+
+  .about-text, .about-text1 {
+      width: 95%; 
+      font-size: 14px; 
+      margin: 10px auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  .about, .about1 {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+  }
+
+  .main {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .main1 {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .about img, .about1 img {
+      width: 100%; 
+      height: auto; 
+      margin-bottom: 10px;
+  }
+
+  .about-text, .about-text1 {
+      width: 95%; 
+      font-size: 12px; 
+      line-height: 1.5; 
+      margin: 5px auto; 
+  }
+}
