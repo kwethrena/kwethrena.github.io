@@ -1,0 +1,299 @@
+.video-container {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 5px solid #684883;
+    padding-top: 60px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 30px 20px;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #684883;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.welcome a.button {
+    display: inline-block;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #684883;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.welcome a.button:hover {
+    background-color: #ab77d8;
+}
+
+.welcome a.button i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.welcome a.button:hover i {
+    margin-left: 15px;
+}
+
+.responsive-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 100px;
+}
+
+.responsive-images img:hover {
+    transform: scale(1.1);
+}
+
+.responsive-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-embed {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.video-embed iframe {
+    flex: 1 1 30%;
+    max-width: 30%;
+    height: 315px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #684883;
+    font-style: italic;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 10px auto;
+}
+
+.welcome {
+    text-align: center;
+    padding: 30px 20px;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #684883;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.merchdisplay a.button {
+    display: inline-block;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    background-color: #684883;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+
+.merchdisplay a.button:hover {
+    background-color: #ab77d8;
+}
+
+.merchdisplay a.button i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.merchdisplay a.button:hover i {
+    margin-left: 15px;
+}
+.merchdisplay {
+    text-align: center;
+    padding: 30px 0px;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.merchdisplay h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #684883;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.merchdisplay p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.fits {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.merchresponsive {
+    display: flex;
+    margin: 20px 100px;
+}
+
+.merchresponsive img:hover {
+    transform: scale(1.1);
+}
+
+.merchresponsive {
+    width: 40%;
+    height: 50%;
+}
+
+@media (max-width: 767px) {
+    .video-container {
+        height: 50vh;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    }
+
+    .welcome {
+        text-align: center; 
+    }
+
+    .video-container {
+        height: fit-content;
+    }
+
+    .video-container video {
+        object-fit: contain; 
+        width: 100%;
+        height: auto;
+    }
+
+    .welcome h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome p {
+        font-size: 1em;
+    }
+
+    .welcome a.button {
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+
+    .responsive-images {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .responsive-image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .video-embed {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .video-embed iframe {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .merchresponsive {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .merchresponsive img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .video-container {
+        height: fit-content;
+        padding-top: 120px;
+    }
+
+    .video-container video {
+        height: auto;
+    }
+
+    .welcome h1 {
+        font-size: 1.5em;
+    }
+
+    .welcome p {
+        font-size: 0.9em;
+    }
+
+    .welcome a.button {
+        padding: 5px 10px;
+        font-size: 9px;
+    }
+
+    .responsive-images {
+        margin: 10px;
+    }
+
+    .video-embed iframe {
+        height: 180px;
+    }
+
+    .merchresponsive img {
+        width: 100%;
+    }
+}
